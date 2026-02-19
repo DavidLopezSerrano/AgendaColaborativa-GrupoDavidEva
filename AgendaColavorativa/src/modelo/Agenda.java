@@ -28,7 +28,19 @@ public class Agenda {
 		return nombre;
 	}
 
-	public void listarContactos() {
+	public ArrayList<Contacto> listarContactos() {
 
+		
+		return contactos;
 	}
+
+	public ArrayList<Contacto> getContactos() {
+		return contactos;
+	}
+
+	public void setContactos(ArrayList<Contacto> contactos) {
+		this.contactos = contactos;
+	}
+	
+	
 }
