@@ -39,4 +39,9 @@ public class Contacto {
 		this.number = number;
 	}
 
+	@Override
+	public String toString() {
+		return "Contacto [name=" + name + ", email=" + email + ", number=" + number + "]";
+	}
+
 }

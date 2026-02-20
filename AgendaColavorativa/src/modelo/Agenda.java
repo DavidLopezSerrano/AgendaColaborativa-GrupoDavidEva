@@ -3,8 +3,9 @@ package modelo;
 import java.util.ArrayList;
 
 public class Agenda {
-
+	
 	private static ArrayList<Contacto> contactos = new ArrayList<>();
+
 
 	public Agenda() {
 
@@ -14,6 +15,10 @@ public class Agenda {
 
 	public void agregarContacto(Contacto c) {
 
+		
+		contactos.add(c);
+		
+		
 	}
 
 	public static void eliminarContacto(String nombre) {
@@ -36,9 +41,9 @@ public class Agenda {
         return "Contacto no encontrado";
     }
 
-	public void listarContactos() {
+	public ArrayList<Contacto> listarContactos() {
 
-		
+		return contactos;
 	}
 
 	public ArrayList<Contacto> getContactos() {
